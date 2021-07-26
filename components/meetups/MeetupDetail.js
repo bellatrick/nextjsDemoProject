@@ -3,7 +3,7 @@ import classes from './MeetuDetail.module.css'
 const MeetupDetail = (props) => {
     return (
         <section className={classes.detail}>
-    <Image src={props.img}/>
+    <Image layout='fill' src={props.img} alt='image of a location'/>
     <h1>{props.title}</h1>
     <address>{props.address}</address>
     <p>{props.description}</p> 

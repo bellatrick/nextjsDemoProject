@@ -12,7 +12,7 @@ router.push('/' + props.id)
     <li className={classes.item}>
       <Card>
         <div className={classes.image}>
-          <Image src={props.image} alt={props.title} />
+          <Image layout='fill' src={props.image} alt={props.title} />
         </div>
         <div className={classes.content}>
           <h3>{props.title}</h3>

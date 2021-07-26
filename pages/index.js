@@ -20,6 +20,7 @@ export async function getStaticProps(){
     const meetups=await meetupsCollections.find().toArray()
     client.close()
  return {
+   fallback:'blocking',
      props:{
          meetups:meetups.map(meetup=>({
            title:meetup.title,
